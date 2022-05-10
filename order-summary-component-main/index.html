@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- implement tailwindcss (utility framework for css) space between -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Order Summary Component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+    body{
+      background-image: url(./images/pattern-background-desktop.svg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-color: hsl(225, 100%, 94%);
+      font-family: 'Red Hat Display', sans-serif;
+    }
+    
+    .background .card {
+      width: 450px;
+      border-radius: 20px;
+      margin: 30px auto;
+      background-color: white; 
+      /*background-image: './images/pattern-background-desktop.svg';*\ /*why isn't this working?*/
+      
+    }
+    .background .card .header-photo { 
+      display: flex;
+      justify-content: center;
+    }
+    .card .info-main {
+      text-align: center;
+      font-size: 16px;
+      font-weight: 500;
+      
+    }
+
+    .card .info-main .container{
+      display: flex; 
+      justify-content: center;
+      margin: 0px auto;
+      /* padding: 5px 0px; */
+      font-weight: 900;
+      background-color: hsl(225, 100%, 98%);
+      align-items: center;
+      width: 350px;
+      border-radius: 15px;
+      
+    }
+
+    .container a:hover{
+      opacity: 0.50;
+    }
+
+    .orderSummaryInfo {
+      opacity: 0.5;
+      padding: 5px;
+      margin: 0px 0px 0px 0px;
+    }
+
+    .payment{
+      width: 78%;
+      border-radius: 10px;
+      background-color: hsl(245, 75%, 52%);
+      color: white;
+      padding: 10px 60px;
+      margin: 20px auto;
+      border: none;
+      font-family:'Red Hat Display', sans-serif;
+
+    }
+
+    button.payment:hover{
+      opacity: 0.50;
+    }
+
+    .cancel{
+      padding: 5px 0px 20px 0px;
+      margin: 0px 0px 10px 0px;
+      opacity: 0.5;
+      font-weight: 700;
+      border: none;
+      font-family:'Red Hat Display', sans-serif;
+      background-color: white;
+    } 
+    
+    button.cancel:hover{
+      opacity: 0.80;
+      background-color: white;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+
+</head>
+
+
+<body>
+  <div class = background>
+    <div class="card">
+      <div class="header-photo">
+        <img src="./images/illustration-hero.svg" style="border-radius: 20px 20px 0px 0px;">
+      </div>
+      <div class="info-main">
+        <h1 style="font-family:'Red Hat Display', sans-serif";>Order Summary</h1>
+        <p></p>
+          <p class="orderSummaryInfo">You can now listen to millions of songs,</p>
+          <p class="orderSummaryInfo">audiobooks, and podcasts on any decive</p>
+          <p class="orderSummaryInfo">anywhere you like!</p>
+          <p class="orderSummaryInfo"></p>
+      <div class="container">
+        <img src="./images/icon-music.svg" style="width:50px; height:50px; justify-content: center; padding: 10px;">
+        <div class="plan" style="padding: 0px 70px 0px 20px">
+          <p>Annual Plan</p>
+          <p style="font-weight: 500; opacity: 0.5;">$59.99/year</p>
+        </div>
+        <a href="" style="padding: 10px; color: hsl(245, 75%, 52%);">Change</a>
+      </div>
+      <button class="payment">
+        Proceed to Payment
+      </button>
+      <div></div>
+      <button class="cancel"> 
+        Cancel Order
+      </button>
+    </div>
+    
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/ssrivastava17">Stephanie Srivastava</a>.
+  </div>
+</body>
+</html>
